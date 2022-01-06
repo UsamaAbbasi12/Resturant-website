@@ -1,0 +1,124 @@
+.header{
+    min-height: 100vh;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.795) , rgba(218, 240, 218, 0.247)), url("../img/hero12.jpg");
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+    
+    .navbar{
+        padding: 10px 50px;
+    }
+    .navbar-brand{
+        font-size: 2rem;
+        
+        color: white !important;
+        font-weight: bolder;
+    }
+    .nav-link{
+        font-size: 1.2em;
+        color: rgb(255, 255, 255) !important;
+        font-weight: 600;
+        &:hover{
+            color: rgb(255, 123, 0) !important;
+        }
+    }
+    .dropdown-menu{
+        background: rgb(240, 137, 2);
+        a{
+            color: white !important;
+            font-size: 19px;
+        }
+        a:hover{
+            background: rgb(255, 123, 0);
+        }
+    }
+    button{
+        background: rgb(255, 123, 0);
+        padding: 10px 30px;
+        color: white;
+        border-radius: 20px;
+        border: none;
+        box-shadow: none;
+        &:hover{
+            background-color:rgb(240, 137, 2) ;
+        }
+        &:focus{
+            box-shadow: none;
+        }
+    }
+    .hero{
+        min-height: 80vh;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        p{
+            font-size: 1.6rem;
+        }
+        h1{
+            font-size: 80px;
+            font-weight: bold;
+            border-bottom: 5px solid rgb(255, 123, 0);
+        }
+
+        .hero-buttons
+        {
+            a{
+        background: rgb(255, 123, 0);
+        padding: 10px 30px;
+        color: white;
+        border-radius: 10px;
+        border: none;
+        box-shadow: none;
+
+        &:hover{
+            background-color:rgb(240, 137, 2) ;
+        }
+        
+        }
+    }
+    }//Hore End
+    // Social Icons 
+    .social-icons{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 60px;
+        padding-bottom: 50px;
+        a{
+            margin-left: 20px;
+        }
+        i{
+            font-size: 30px;
+            color: rgb(240, 137, 2);
+            border: 1px solid rgb(0, 0, 0);
+            padding: 7px;
+            border-radius: 5px;
+            &:hover{
+                color: white;
+                transition: .5s;
+                border-color: rgb(240, 137, 2);
+            }
+        }
+    }
+}
+
+@media screen and (max-width:760px) {
+    .navbar{
+        padding: 0px;
+        background: rgb(240, 137, 2) !important;
+    }
+    .navbar-brand{
+        font-size: 1px;
+        padding-left: 0;
+    }
+    .hero{
+          padding: 80px;  
+    }
+    .social-icons{
+        display: flex;
+        justify-content: center;
+
+    }
+}

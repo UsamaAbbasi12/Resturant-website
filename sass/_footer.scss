@@ -1,0 +1,43 @@
+.footer{
+    background: #645f56;
+    color: #ffff;
+    padding: 70px 0px;
+    font-size: 14px;
+    position: absolute;
+    right: 0;
+    left: 0;
+   
+    h2::after{
+        content: " ";
+        display: block;
+        background: orangered;
+        width: 100px;
+        height: 3px;
+        position: relative;
+        
+    }
+    .icons{
+        i{
+            background: blanchedalmond;
+            padding: 10px;
+            font-size: 20px;
+            border-radius: 50%;
+            color: rgb(0, 0, 0);
+        }
+        i:hover{
+            background: orangered;
+            color: white;
+            transition: .5s;
+        }
+    }
+    .footer-nav{
+        a{
+            text-decoration: none;
+            font-size: 20px;
+            color: #ffff;
+        }
+        a:hover{
+            color: orangered;
+        }
+    }
+}

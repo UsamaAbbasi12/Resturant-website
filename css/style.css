@@ -1,0 +1,353 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.header {
+  min-height: 100vh;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.795), rgba(218, 240, 218, 0.247)), url("../img/hero12.jpg");
+  background-size: cover;
+  width: 100%;
+  background-position: center;
+}
+.header .navbar {
+  padding: 10px 50px;
+}
+.header .navbar-brand {
+  font-size: 2rem;
+  color: white !important;
+  font-weight: bolder;
+}
+.header .nav-link {
+  font-size: 1.2em;
+  color: white !important;
+  font-weight: 600;
+}
+.header .nav-link:hover {
+  color: #ff7b00 !important;
+}
+.header .dropdown-menu {
+  background: #f08902;
+}
+.header .dropdown-menu a {
+  color: white !important;
+  font-size: 19px;
+}
+.header .dropdown-menu a:hover {
+  background: #ff7b00;
+}
+.header button {
+  background: #ff7b00;
+  padding: 10px 30px;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  box-shadow: none;
+}
+.header button:hover {
+  background-color: #f08902;
+}
+.header button:focus {
+  box-shadow: none;
+}
+.header .hero {
+  min-height: 80vh;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.header .hero p {
+  font-size: 1.6rem;
+}
+.header .hero h1 {
+  font-size: 80px;
+  font-weight: bold;
+  border-bottom: 5px solid #ff7b00;
+}
+.header .hero .hero-buttons a {
+  background: #ff7b00;
+  padding: 10px 30px;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  box-shadow: none;
+}
+.header .hero .hero-buttons a:hover {
+  background-color: #f08902;
+}
+.header .social-icons {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 60px;
+  padding-bottom: 50px;
+}
+.header .social-icons a {
+  margin-left: 20px;
+}
+.header .social-icons i {
+  font-size: 30px;
+  color: #f08902;
+  border: 1px solid black;
+  padding: 7px;
+  border-radius: 5px;
+}
+.header .social-icons i:hover {
+  color: white;
+  transition: 0.5s;
+  border-color: #f08902;
+}
+
+@media screen and (max-width: 760px) {
+  .navbar {
+    padding: 0px;
+    background: #f08902 !important;
+  }
+
+  .navbar-brand {
+    font-size: 1px;
+    padding-left: 0;
+  }
+
+  .hero {
+    padding: 80px;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+  }
+}
+.products {
+  background-color: #fee2b3;
+  min-height: 150vh;
+}
+.products .product-heading {
+  border-bottom: 2px solid #f08902;
+}
+.products .product-heading h1 {
+  font-weight: bold;
+  font-size: 50px;
+}
+.products .product-heading h1 span {
+  color: #f08902;
+}
+.products .breakfast .breakfast-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.products .breakfast h2 {
+  font-size: 50px;
+  margin-left: 20px;
+  margin-top: 30px;
+  border-bottom: 2px solid #f08902;
+}
+.products .breakfast span {
+  color: #f08902;
+  font-weight: bold;
+}
+.products .breakfast .breakfast-logo {
+  width: 100px;
+  margin: 20px;
+  object-fit: cover;
+}
+.products .breakfast-items {
+  margin-top: 20px;
+}
+.products .breakfast-items img {
+  border-radius: 10px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+.products .breakfast-items img:hover {
+  transform: scaleX(1);
+  transition: 1s;
+}
+.products .breakfast-items h4 {
+  letter-spacing: 2px;
+}
+.products .breakfast-items p {
+  color: #ff6a00;
+  font-size: 20px;
+}
+.products .dessert {
+  margin-top: 50px;
+}
+.products .dessert h3 span {
+  color: #ff6a00;
+}
+.products .custom-card {
+  margin: 10px;
+  border: 1px solid #f08902;
+  padding: 10px 40px !important;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.products .custom-card p {
+  font-size: 20px;
+}
+.products .custom-card h6 {
+  color: #ff6a00;
+  font-size: 26px;
+}
+.products .custom-card:hover {
+  background: white;
+  transition: 0.6s;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.footer {
+  background: #645f56;
+  color: #ffff;
+  padding: 70px 0px;
+  font-size: 14px;
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+.footer h2::after {
+  content: " ";
+  display: block;
+  background: orangered;
+  width: 100px;
+  height: 3px;
+  position: relative;
+}
+.footer .icons i {
+  background: blanchedalmond;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 50%;
+  color: black;
+}
+.footer .icons i:hover {
+  background: orangered;
+  color: white;
+  transition: 0.5s;
+}
+.footer .footer-nav a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffff;
+}
+.footer .footer-nav a:hover {
+  color: orangered;
+}
+
+.about_us {
+  min-height: 80vh;
+  width: 100%;
+}
+.about_us .about-heading {
+  border-bottom: none !important;
+  font-weight: bold;
+}
+.about_us .about-heading span {
+  color: orangered;
+  font-weight: bold;
+}
+.about_us #card {
+  margin: 8px;
+  padding: 0px 20px;
+  border: 1.5px solid rgba(128, 128, 128, 0.253);
+  cursor: pointer;
+  transition: 0.5s;
+  color: #363636;
+}
+.about_us #card:hover {
+  background: orangered;
+  color: white;
+  transition: 0.5s;
+  border: none;
+  transform: translateY(-10px);
+  animation-timing-function: ease-in-out;
+}
+
+#chefs {
+  min-height: 90vh;
+  width: 100%;
+  background: rgba(245, 201, 126, 0.9);
+}
+#chefs .chefs-heading {
+  min-height: 30vh;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#chefs span {
+  color: orangered;
+}
+#chefs img {
+  object-fit: cover;
+  margin-bottom: 3px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+#chefs img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+#chefs #team-card h1 {
+  position: relative;
+  top: -130px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+#chefs .team-icons {
+  position: relative;
+  top: -120px;
+  display: flex;
+  justify-content: center;
+}
+#chefs .team-icons i {
+  font-size: 20px;
+  margin-right: 20px;
+  background-color: white;
+  color: orangered;
+  padding: 10px;
+  border-radius: 10px;
+}
+#chefs .team-icons i:hover {
+  background-color: orangered;
+  color: white;
+  transition: 0.5s;
+}
+
+.gallary {
+  min-height: 500px;
+  width: 100%;
+  background-color: #fee2b3;
+}
+.gallary img {
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+#contact {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fee2b3;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,96 @@
+.products{
+    background-color: rgb(254, 226, 179);
+    min-height: 150vh;
+    .product-heading{
+        border-bottom: 2px solid rgb(240, 137, 2);
+        h1 {
+            font-weight: bold;
+            font-size: 50px;
+            span{
+                color: rgb(240, 137, 2);
+            }
+        }
+    }
+    // BreakFast Section
+    .breakfast{
+        .breakfast-heading{
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h2{
+            font-size: 50px;
+            margin-left: 20px;
+            margin-top: 30px;
+            border-bottom: 2px solid rgb(240, 137, 2);
+        }
+        span{
+            color: rgb(240, 137, 2);
+            font-weight: bold;
+        }
+        .breakfast-logo{
+            width: 100px;
+            margin: 20px;
+            object-fit: cover;
+        }
+    }
+
+    .breakfast-items{
+        margin-top: 20px;
+        img{
+            border-radius: 10px;
+            margin-bottom: 8px;
+            cursor: pointer;
+        }
+        img:hover{
+            transform: scaleX(1);
+            transition: 1s;
+        }
+        h4{
+            letter-spacing: 2px;
+        }
+        p{
+            color: rgb(255, 106, 0);
+            font-size: 20px;
+        }
+    }
+    // Break Fast Ends Here...................................................
+
+    // Dessert Starting Here
+
+    .dessert{
+        margin-top: 50px;
+        
+        h3{
+            span{
+                color: rgb(255, 106, 0);
+            }
+        }
+    }
+    .custom-card{
+        margin: 10px;
+        border: 1px solid rgb(240, 137, 2);
+        padding: 10px 40px !important;
+        cursor: pointer;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p{
+            font-size: 20px;
+            
+        }
+        h6{
+            color: rgb(255, 106, 0);
+            font-size: 26px;
+        }
+        &:hover{
+            background: white;
+            transition: .6s;
+            border: none;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+    }
+
+}
